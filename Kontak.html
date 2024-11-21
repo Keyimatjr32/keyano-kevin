@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Navbar</title>
+    <style>
+        /* Style untuk Navbar */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: rgb(0, 13, 255);
+            color: #25a86b;
+        }
+
+        /* Responsive navbar */
+        @media screen and (max-width: 600px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <a href="Home.html">Home</a>
+    <a href="Profil.html">Profil</a>
+    <a href="Kontak.html">Kontak</a>
+</div>
+
+<!-- Konten halaman -->
+<header>
+    <h1>Hubungi Kami</h1>
+</header>
+
+<section>
+    <p>Jika Anda memiliki pertanyaan, jangan ragu untuk menghubungi kami melalui <strong>formulir di bawah ini</strong> atau melalui salah satu kontak di bawah.</p>
+</section>
+
+<section>
+    <form action="" method="POST">
+        <label for="name">Nama:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="message">Pesan:</label><br>
+        <textarea id="message" name="message" required></textarea><br><br>
+        <input type="submit" value="Kirim">
+    </form>
+</section>
+
+<section>
+    <h2>Kontak Lainnya</h2>
+    <ul>
+        <li>Email: <a href="zhang.yiming@gmail.com">zhang.yiming@gmail.com</a></li>
+        <li>Telepon:(0821)18158551</li>
+    </ul>
+</section>
+
+<footer>
+    <a href="home.html">Kembali ke Home</a>
+</footer>
+
+</body>
+</html>
